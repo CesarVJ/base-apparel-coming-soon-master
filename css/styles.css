@@ -1,0 +1,139 @@
+body {
+  background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+  font-size: 70px;
+  letter-spacing: 10px;
+}
+
+form {
+  margin-top: 2rem;
+  position: relative;
+}
+
+p {
+  font-size: 16px;
+  color: hsl(0, 36%, 70%);
+}
+
+span {
+  font-weight: lighter;
+  color: hsl(0, 36%, 70%);
+  /* letter-spacing: 10px; */
+}
+
+/* Title section */
+#title {
+  padding: 5% 25% 7% 7%;
+  margin-bottom: 0px;
+}
+
+/* Image section */
+#image-banner {
+  height: 25%;
+}
+
+.woman-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Content section */
+#main-box {
+  padding: 10% 15%;
+  background-image: url("../images/bg-pattern-desktop.svg");
+  text-align: center;
+}
+
+.arrow {
+  border-radius: 20%;
+  width: 20%;
+}
+
+.button {
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 0 10px 35px 0px rgba(0, 0, 0, 0.27), 0 10px 35px 0px hsl(0, 80%, 86%);
+  border: 0;
+  border-radius: 25px;
+  width: 22%;
+  height: 3em;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+.button:focus{
+    outline: none;
+}
+
+.email-address {
+  background: transparent;
+  ext-align: left;
+  border-radius: 25px;
+  padding-left: 5%;
+  border: 1px solid hsl(0, 36%, 70%);
+  height: 3rem;
+  width: 90%;
+}
+
+.email-address::placeholder {
+  color: hsl(0, 36%, 70%);
+  font-size: 16px;
+}
+
+.email-address:focus {
+  outline: none;
+}
+
+.email-address:invalid{
+  border: 2px solid #c72c41;
+}
+
+.error-icon{
+  position: relative;
+  right: 25%;
+  visibility:hidden
+}
+.error-message{
+  color: #c72c41;
+  margin-top: 2%;
+  position: relative;
+  left:5%;
+  visibility:hidden
+}
+
+@media (min-width: 895px) {
+  body {
+    background-image: url("../images/bg-pattern-desktop.svg");
+  }
+
+  #title {
+    display: inline-block;
+    float: left;
+    padding: 5% 25% 3% 12%;
+  }
+  /* Content section */
+  #main-box {
+    float: left;
+    text-align: left;
+    padding: 5% 11%;
+    width: 55%;
+  }
+  /* Image section */
+  #image-banner {
+    display: inline-block;
+    float: right;
+    width: 45%;
+    height: 100%;
+  }
+  .woman-img {
+    height: auto;
+    width: auto;
+    content: url("../images/hero-desktop.jpg");
+  }
+
+  #main-box {
+    background-image: none;
+  }
+}
